@@ -34,14 +34,22 @@ h1, h2 {
   padding: 18px;
   box-shadow: 0 3px 10px #ddd;
 }
+.menu  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ } 
 button {
-  width: 100%;
-  padding: 18px;
-  font-size: 20px;
+  width: 45%;
+  padding: 20px;
+  font-size: 18px;
   border: none;
-  border-radius: 15px;
-  background: #2f6f5e;
-  color: white;
+  border-radius: 20px;
+  background: white;
+  color: #2f6f5e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-weight: bold;
+  cursor: pointer;
   margin-top: 12px;
 }
 .content {
@@ -73,9 +81,10 @@ a {
 <p>Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.</p>
 </div>
 
-<button onclick="mostrar('casa')">🏠 La Casa</button>
+<button onclick="mostrar('casa')">🏠 Casa 3 Arcos</button>
 <div id="casa" class="content">
-<p>Casa 3 Arcos cuenta con 3 habitaciones con A/C, 2 baños completos, cocina equipada, sala con Smart TV, WiFi, hamacas y estacionamiento amplio.</p>
+<p>Casa 3 Arcos combina codidad, privacidad y el encanto de Vieques en un espacio diseñado para hasta 6 huéspedes. 
+Nuestro deseo es que cada visita les permita disfrutar de la isla y crear recuerdos inolvidables junto a familiares y amigos.</p>
 </div>
 
 <button onclick="mostrar('wifi')">📶 WiFi</button>
