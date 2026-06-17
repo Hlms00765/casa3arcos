@@ -3,127 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa 3 Arcos | Vieques, Puerto Rico</title>
+<title>Casa 3 Arcos</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f4ef;
+  color: #333;
+}
+.header img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+}
+.card {
+  background: white;
+  margin: 12px 0;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 3px 10px #ddd;
+}
+button {
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  background: #2f6f5e;
+  color: white;
+  margin-top: 12px;
+}
+.content {
+  display: none;
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  margin-top: 8px;
+}
+a {
+  color: #2f6f5e;
+  font-weight: bold;
+}
+</style>
 </head>
 
-<body style="font-family: Arial, sans-serif; max-width: 1000px; margin:auto; padding:20px; line-height:1.6;">
+<body>
 
-<h1>🏠 Casa 3 Arcos</h1>
- <img src="playa negra.png" alt="Playa Negra Vieques" style="width:100%; border-radius:15px; margin-bottom:20px;"> 
-<h3>Tu escapada perfecta en Vieques, Puerto Rico</h3>
+<div class="header">
+  <img src="playa negra.png" alt="Playa Negra Vieques">
+</div>
 
-<hr>
+<div class="container">
 
-<h2>¡Bienvenidos!</h2>
+<h1>Casa 3 Arcos</h1>
+<h2>Tu escapada perfecta en Vieques, Puerto Rico</h2>
 
-<p>
-Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. 
-Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.
-</p>
+<div class="card">
+<p>Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.</p>
+</div>
 
-<hr>
+<button onclick="mostrar('casa')">🏠 La Casa</button>
+<div id="casa" class="content">
+<p>Casa 3 Arcos cuenta con 3 habitaciones con A/C, 2 baños completos, cocina equipada, sala con Smart TV, WiFi, hamacas y estacionamiento amplio.</p>
+</div>
 
-<h2>📍 Ubicación</h2>
-
-<p>
-<a href="https://maps.app.goo.gl/LanZY42biLhWMhXc6?g_st=aw">
-Abrir ubicación en Google Maps
-</a>
-</p>
-
-<hr>
-
-<h2>📶 Información de WiFi</h2>
-
+<button onclick="mostrar('wifi')">📶 WiFi</button>
+<div id="wifi" class="content">
 <p><strong>Red:</strong> Casa3Arcos</p>
 <p><strong>Contraseña:</strong> 21301100</p>
+</div>
 
-<hr>
+<button onclick="mostrar('ubicacion')">📍 Ubicación</button>
+<div id="ubicacion" class="content">
+<p><a href="https://maps.app.goo.gl/LanZY42biLhWMhXc6?g_st=aw" target="_blank">Abrir ubicación en Google Maps</a></p>
+</div>
 
-<h2>⏰ Horarios</h2>
-
+<button onclick="mostrar('horarios')">⏰ Check-in / Check-out</button>
+<div id="horarios" class="content">
 <p><strong>Check-in:</strong> 2:00 PM</p>
 <p><strong>Check-out:</strong> 12:00 PM</p>
+</div>
 
-<hr>
-
-<h2>🏡 Sobre la Propiedad</h2>
-
+<button onclick="mostrar('reglas')">📋 Reglas de la Casa</button>
+<div id="reglas" class="content">
 <ul>
-<li>Capacidad máxima para 6 adultos</li>
-<li>3 habitaciones con camas Queen y aire acondicionado</li>
-<li>2 baños completos</li>
-<li>Cocina totalmente equipada</li>
-<li>Sala con Smart TV</li>
-<li>Internet WiFi</li>
-<li>Amplio estacionamiento</li>
-<li>Hamacas para relajarse</li>
-</ul>
-
-<hr>
-
-<h2>🏖️ Amenidades Incluidas</h2>
-
-<ul>
-<li>Sillas de playa</li>
-<li>Sombrillas</li>
-<li>Neverita</li>
-<li>Caretas para snorkel</li>
-<li>Bicicletas</li>
-<li>Coffee Bar</li>
-<li>Juegos de mesa</li>
-<li>Libros</li>
-</ul>
-
-<hr>
-
-<h2>☕ Coffee Bar</h2>
-
-<p>
-Disfrute de nuestro Coffee Bar preparado para nuestros huéspedes.
-</p>
-
-<hr>
-
-<h2>📋 Reglas de la Casa</h2>
-
-<ul>
-<li>No fumar dentro de la propiedad.</li>
-<li>No se permiten fiestas ni eventos.</li>
-<li>No se permiten mascotas.</li>
-<li>Horario de silencio de 10:00 PM a 8:00 AM.</li>
+<li>No fumar.</li>
+<li>No fiestas ni eventos.</li>
+<li>No mascotas.</li>
 <li>Máximo 6 adultos.</li>
-<li>Favor apagar luces y aires acondicionados al salir.</li>
-<li>No arrojar papel, toallas húmedas ni productos femeninos al inodoro.</li>
+<li>Horario de silencio: 10:00 PM a 8:00 AM.</li>
+<li>Apagar luces y aires al salir.</li>
+<li>No arrojar papel ni toallas húmedas al inodoro.</li>
 </ul>
+</div>
 
-<hr>
-
-<h2>🏝️ Recomendaciones en Vieques</h2>
-
+<button onclick="mostrar('playas')">🏖️ Playas Recomendadas</button>
+<div id="playas" class="content">
 <ul>
+<li>Playa Negra</li>
 <li>Playa Caracas</li>
 <li>Playa La Chiva</li>
 <li>Sun Bay</li>
 <li>Bahía Bioluminiscente</li>
-<li>Malecón de Esperanza</li>
 </ul>
+</div>
 
-<hr>
+<button onclick="mostrar('amenidades')">☕ Amenidades</button>
+<div id="amenidades" class="content">
+<ul>
+<li>Coffee Bar</li>
+<li>Sillas de playa</li>
+<li>Sombrillas</li>
+<li>Neverita</li>
+<li>Caretas</li>
+<li>Bicicletas</li>
+<li>Hamacas</li>
+</ul>
+</div>
 
-<h2>🔗 Reserva Directamente</h2>
+<button onclick="mostrar('airbnb')">🔗 Reserva</button>
+<div id="airbnb" class="content">
+<p><a href="https://airbnb.com/h/casa3arcosvieques" target="_blank">Ver Casa 3 Arcos en Airbnb</a></p>
+</div>
 
-<p>
-<a href="https://airbnb.com/h/casa3arcosvieques">
-Ver Casa 3 Arcos en Airbnb
-</a>
-</p>
+<button onclick="mostrar('contacto')">📞 Contacto</button>
+<div id="contacto" class="content">
+<p>Para cualquier duda durante su estadía, pueden comunicarse con sus anfitriones:</p>
+<p><strong>Héctor y Glory</strong></p>
+</div>
 
-<hr>
+<p style="text-align:center; margin-top:30px;">Gracias por hospedarse en Casa 3 Arcos ❤️</p>
 
-<p style="text-align:center;">
-Gracias por hospedarse en Casa 3 Arcos ❤️
-</p>
+</div>
+
+<script>
+function mostrar(id) {
+  var seccion = document.getElementById(id);
+  if (seccion.style.display === "block") {
+    seccion.style.display = "none";
+  } else {
+    seccion.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
