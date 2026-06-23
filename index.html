@@ -85,8 +85,9 @@ a {
 
 <div class="container">
 
-<div style="text-align:right; margin-bottom:10px;">
-    <button onclick="cambiarIdioma()">🇺🇸 English</button>
+<div style="text-align:right; margin-bottom:15px; font-size:18px;">
+    <a href="#" onclick="cambiarEspanol()">ES</a> |
+    <a href="#" onclick="cambiarIdioma()">EN</a>
 </div>
 
 <h1>
@@ -390,12 +391,20 @@ Si tienen cualquier duda, necesitan recomendaciones o requieren asistencia duran
 
 <script>
 function mostrar(id) {
-  var seccion = document.getElementById(id);
-  if (seccion.style.display === "block") {
-    seccion.style.display = "none";
-  } else {
-    seccion.style.display = "block";
-  }
+    var seccion = document.getElementById(id);
+    if (seccion.style.display === "block") {
+        seccion.style.display = "none";
+    } else {
+        seccion.style.display = "block";
+    }
+}
+
+function cambiarIdioma() {
+    alert("English version coming soon");
+}
+
+function cambiarEspanol() {
+    location.reload();
 }
 </script>
 
