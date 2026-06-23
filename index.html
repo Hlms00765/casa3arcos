@@ -95,11 +95,11 @@ a {
     <a href="#" onclick="cambiarIdioma()">EN</a>
 </div>
   
-<h2>Tu escapada perfecta en Vieques, Puerto Rico</h2>
+<h2> id="titulo">Tu escapada perfecta en Vieques, Puerto Rico</h2>
 
 
 <div class="card">
-<p>Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.</p>
+<p id="bienvenida">Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.</p>
 </div>
 
 <button onclick="mostrar('casa')">🏠 Casa 3 Arcos</button>
@@ -403,11 +403,23 @@ function mostrar(id) {
 }
 
 function cambiarIdioma() {
-    alert("English version coming soon");
+
+    document.getElementById("titulo").innerText =
+    "Your Perfect Getaway in Vieques, Puerto Rico";
+
+    document.getElementById("bienvenida").innerText =
+    "Thank you for choosing Casa 3 Arcos. We hope you enjoy a relaxing, comfortable stay filled with special moments. We have prepared this guide to help you make the most of your visit and feel at home from the very first moment.";
+
 }
 
 function cambiarEspanol() {
-    location.reload();
+
+    document.getElementById("titulo").innerText =
+    "Tu escapada perfecta en Vieques, Puerto Rico";
+
+    document.getElementById("bienvenida").innerText =
+    "Gracias por elegir Casa 3 Arcos. Esperamos que disfruten de una estadía relajante, cómoda y llena de momentos especiales. Hemos preparado esta guía para ayudarles a aprovechar al máximo su visita y que se sientan como en casa desde el primer momento.";
+
 }
 </script>
 
