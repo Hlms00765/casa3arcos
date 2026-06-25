@@ -414,6 +414,14 @@ function cambiarIdioma() {
 
     document.getElementById("bienvenida").innerText =
     "Thank you for choosing Casa 3 Arcos! We hope you enjoy your stay. Here you'll find all the information you need to make the most of your visit to Vieques.";
+  
+    document.querySelector("button[onclick=\"mostrar('casa')\"]").innerHTML =
+    "🏠 About Casa 3 Arcos";
+  
+    document.querySelector("#casa p").innerHTML =
+    "Casa 3 Arcos combines comfort, privacy, and the charm of Vieques in a space designed for up to 6 guests.
+    <br><br>Our wish is that every guest enjoys the island and creates unforgettable memories with family and friends.";
+  
 }
 
 function cambiarEspanol() {
@@ -422,6 +430,13 @@ function cambiarEspanol() {
 
     document.getElementById("bienvenida").innerText =
     "Gracias por elegir Casa 3 Arcos. Esperamos que disfruten su estadía. Aquí encontrará toda la información que necesitan para disfrutar al máximo de Vieques";
+
+   document.querySelector("button[onclick=\"mostrar('casa')\"]").innerHTML =
+    "🏠 Casa 3 Arcos"; 
+
+  document.querySelector("#casa p").innerHTML =
+"Casa 3 Arcos combina comodidad, privacidad y el encanto de Vieques en un espacio diseñado para hasta 6 huéspedes.
+<br><br>Nuestro deseo es que cada visita les permita disfrutar de la isla y crear recuerdos inolvidables junto a familiares y amigos.";
 
 }
 </script>
