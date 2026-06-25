@@ -120,7 +120,7 @@ Esperamos que disfruten su estadía. Aquí encontrarán toda la información que
 
 <button onclick="mostrar('ubicacion')">📍 Ubicación</button>
 <div id="ubicacion" class="content">
-<p>La ubicación exacta de Casa 3 Arcos e instrucciones para llegar serán compartidas el día de su check-in.
+<p id="textoUbicacion">La ubicación exacta de Casa 3 Arcos e instrucciones para llegar serán compartidas el día de su check-in.
 Si necesita asistencia adicional, no dude en comunicarse con nosotros.</p>
 </div>
 
@@ -425,6 +425,12 @@ function cambiarIdioma() {
 
   document.querySelector("button[onclick=\"mostrar('wifi')\"]").innerHTML =
   "📶 WiFi";
+
+  document.getElementById("textoUbicacion").innerHTML =
+  "The exact location of Casa 3 Arcos and directions to the property will be shared on your check-in day. If you need any additional assistance, please feel free to contact us.";
+
+  document.querySelector("button[onclick=\"mostrar('ubicacion')\"]").innerHTML =
+  "📍 Location";
 }
 
 function cambiarEspanol() {
@@ -445,6 +451,12 @@ function cambiarEspanol() {
 
 document.querySelector("button[onclick=\"mostrar('wifi')\"]").innerHTML =
 "📶 WiFi";
+
+document.getElementById("textoUbicacion").innerHTML =
+"La ubicación exacta de Casa 3 Arcos e instrucciones para llegar serán compartidas el día de su check-in. Si necesita asistencia adicional, no dude en comunicarse con nosotros.";
+
+document.querySelector("button[onclick=\"mostrar('ubicacion')\"]").innerHTML =
+"📍 Ubicación";
 }
 </script>
 
