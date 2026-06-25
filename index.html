@@ -126,10 +126,9 @@ Si necesita asistencia adicional, no dude en comunicarse con nosotros.</p>
 
 <button onclick="mostrar('horarios')">⏰ Check-in / Check-out</button>
 <div id="horarios" class="content">
-<p><strong>Check-in:</strong> 2:00 PM</p>
-<p><strong>Check-out:</strong> 12:00 PM</p>
+<p id="textoHorarios"><strong>Check-in:</strong> 2:00 PM<br><strong>Check-out:</strong> 12:00 PM<br><br>
 Si necesita coordinar una llegada o salida diferente, comuníquese con nosotros con anticipación y haremos lo posible
-por ayudarle según la disponibilidad de la propiedad.
+por ayudarle según la disponibilidad de la propiedad.</p>
 </div>
 
 <button onclick="mostrar('reglas')">📋 Reglas adicionales de la Casa</button>
@@ -431,6 +430,12 @@ function cambiarIdioma() {
 
   document.querySelector("button[onclick=\"mostrar('ubicacion')\"]").innerHTML =
   "📍 Location";
+
+  document.getElementById("textoHorarios").innerHTML =
+  "<strong>Check-in:</strong> 2:00 PM<br><strong>Check-out:</strong> 12:00 PM<br><br>If you need to coordinate a different arrival or departure time, please contact us in advance and we will do our best to help depending on the property’s availability.";
+
+  document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
+  "⏰ Check-in / Check-out";
 }
 
 function cambiarEspanol() {
@@ -457,6 +462,12 @@ document.getElementById("textoUbicacion").innerHTML =
 
 document.querySelector("button[onclick=\"mostrar('ubicacion')\"]").innerHTML =
 "📍 Ubicación";
+
+  document.getElementById("textoHorarios").innerHTML =
+"<strong>Check-in:</strong> 2:00 PM<br><strong>Check-out:</strong> 12:00 PM<br><br>Si necesita coordinar una llegada o salida diferente, comuníquese con nosotros con anticipación y haremos lo posible por ayudarle según la disponibilidad de la propiedad.";
+
+document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
+"⏰ Check-in / Check-out";
 }
 </script>
 
