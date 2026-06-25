@@ -133,7 +133,7 @@ por ayudarle según la disponibilidad de la propiedad.</p>
 
 <button onclick="mostrar('reglas')">📋 Reglas adicionales de la Casa</button>
 <div id="reglas" class="content">
-<ul>
+<ul id="textoReglas">
 🏡 Casa 3 Arcos tiene capacidad para un máximo de 6 huéspedes.<br><br>
 👨‍👩‍👧‍👧 Casa 3 Arcos recibe huéspedes de 12 años en adelante. (Si viaja con niños menores de 12 años, puede comunicarse con 
 nosotros para evaluar su caso.<br><br>
@@ -436,6 +436,9 @@ function cambiarIdioma() {
 
   document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
   "⏰ Check-in / Check-out";
+
+  document.querySelector("button[onclick=\"mostrar('reglas')\"]").innerHTML =
+  "📋 House Rules";
 }
 
 function cambiarEspanol() {
@@ -468,6 +471,9 @@ document.querySelector("button[onclick=\"mostrar('ubicacion')\"]").innerHTML =
 
 document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
 "⏰ Check-in / Check-out";
+
+  document.querySelector("button[onclick=\"mostrar('reglas')\"]").innerHTML =
+"📋 Reglas adicionales de la Casa";
 }
 </script>
 
