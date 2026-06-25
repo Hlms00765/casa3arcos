@@ -145,7 +145,7 @@ nosotros para evaluar su caso.<br><br>
 
 <button onclick="mostrar('playas')">🏖️ Playas Recomendadas</button>
 <div id="playas" class="content">
-<ul style="list-style:none; padding-left:0;">
+<ul id="textoPlayas"style="list-style:none; padding-left:0;">
 <li>🌊 <a href="https://g.co/kgs/kmQfsZu" target="_blank">Playa Negra</a></li>
 
 <li>🌊 <a href="https://g.co/kgs/2DDPh6H" target="_blank">Playa Caracas</a></li>
@@ -441,7 +441,18 @@ function cambiarIdioma() {
   "📋 House Rules";
   document.getElementById("textoReglas").innerHTML =
   "🏠 Casa 3 Arcos has a maximum capacity of 6 guests.<br><br>👨‍👩‍👧 Casa 3 Arcos welcomes guests 12 years and older. If you are traveling with children under 12, please contact us so we can evaluate your case.<br><br>🐾 Although we love animals, pets are not allowed.<br><br>🚭 Smoking is not allowed inside the property. You may use the outdoor areas.<br><br>💡 When leaving the property, please turn off lights, fans, and air conditioners.";
+
+  document.querySelector("button[onclick=\"mostrar('playas')\"]").innerHTML =
+  "🏖️ Recommended Beaches";
+
+  document.getElementById("textoPlayas").innerHTML =
+  `<li>🌊 <a href="https://g.co/kgs/kmQfsZu" target="_blank">Black Sand Beach</a></li>
+  <li>🌊 <a href="https://g.co/kgs/2DDPh6H" target="_blank">Caracas Beach</a></li>
+  <li>🌊 <a href="https://g.co/kgs/2YjH6wT" target="_blank">La Chiva Beach</a></li>
+  <li>🌊 <a href="https://g.co/kgs/VmA8QFd" target="_blank">Sun Bay Beach</a></li>
+  <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
 }
+  
 
 function cambiarEspanol() {
   document.getElementById("titulo").innerText =
@@ -478,6 +489,16 @@ document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
 "📋 Reglas adicionales de la Casa";
   document.getElementById("textoReglas").innerHTML =
 "🏠 Casa 3 Arcos tiene capacidad para un máximo de 6 huéspedes.<br><br>👨‍👩‍👧 Casa 3 Arcos recibe huéspedes de 12 años en adelante. Si viaja con niños menores de 12 años, puede comunicarse con nosotros para evaluar su caso.<br><br>🐾 Aunque nos simpatizan los animales, nuestra casa no los permite.<br><br>🚭 Está prohibido fumar dentro de la propiedad, puede utilizar las áreas exteriores.<br><br>💡 Al salir de la propiedad, favor apagar luces, abanicos y acondicionadores de aire.";
+
+  document.querySelector("button[onclick=\"mostrar('playas')\"]").innerHTML =
+"🏖️ Playas Recomendadas";
+
+  document.getElementById("textoPlayas").innerHTML =
+  `<li>🌊 <a href="https://g.co/kgs/kmQfsZu" target="_blank">Playa Negra</a></li>
+  <li>🌊 <a href="https://g.co/kgs/2DDPh6H" target="_blank">Playa Caracas</a></li>
+  <li>🌊 <a href="https://g.co/kgs/2YjH6wT" target="_blank">Playa La Chiva</a></li>
+  <li>🌊 <a href="https://g.co/kgs/VmA8QFd" target="_blank">Playa Sun Bay</a></li>
+  <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
 }
   
 </script>
