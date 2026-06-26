@@ -174,7 +174,7 @@ Los espacios son limitados y requieren reservación previa.<br><br>
 
 <button onclick="mostrar('amenidades')">☕ Amenidades</button>
 <div id="amenidades" class="content">
-<ul>
+<ul id="textoAmenidades">
 </li>❄️Aire acondicionado en las 3 habitaciones</li>
 </li>🚽2 baños</li>
 </li>📶WiFi</li>
@@ -451,6 +451,13 @@ function cambiarIdioma() {
   <li>🌊 <a href="https://g.co/kgs/2YjH6wT" target="_blank">La Chiva Beach</a></li>
   <li>🌊 <a href="https://g.co/kgs/VmA8QFd" target="_blank">Sun Bay Beach</a></li>
   <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
+
+  document.querySelector("button[onclick=\"mostrar('amenidades')\"]").innerHTML =
+  "⚫ Amenities";
+
+document.getElementById("textoAmenidades").innerHTML =
+"❄️ Air conditioning in all 3 bedrooms<br><br>🚿 2 bathrooms<br><br>📶 WiFi<br><br>📺 Smart TV<br><br>☕ Coffee Bar<br><br>🍳 Equipped kitchen<br><br>🏖️ Beach chairs<br><br>⛱️ Beach umbrellas<br><br>🧊 Cooler<br><br>🤿 Snorkel masks<br><br>🚲 Bicycles<br><br>🌴 Hammocks<br><br>🚗 Private parking";
+
 }
   
 
@@ -499,6 +506,13 @@ document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
   <li>🌊 <a href="https://g.co/kgs/2YjH6wT" target="_blank">Playa La Chiva</a></li>
   <li>🌊 <a href="https://g.co/kgs/VmA8QFd" target="_blank">Playa Sun Bay</a></li>
   <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
+
+  document.querySelector("button[onclick=\"mostrar('amenidades')\"]").innerHTML =
+  "⚫ Amenidades";
+
+document.getElementById("textoAmenidades").innerHTML =
+"❄️ Aire acondicionado en las 3 habitaciones<br><br>🚿 2 baños<br><br>📶 WiFi<br><br>📺 Smart TV<br><br>☕ Coffee Bar<br><br>🍳 Cocina equipada<br><br>🏖️ Sillas de playa<br><br>⛱️ Sombrillas de playa<br><br>🧊 Neverita<br><br>🤿 Caretas para snorkel<br><br>🚲 Bicicletas<br><br>🌴 Hamacas<br><br>🚗 Estacionamiento privado";
+
 }
   
 </script>
