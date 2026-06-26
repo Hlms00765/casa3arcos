@@ -172,7 +172,7 @@ Los espacios son limitados y requieren reservación previa.<br><br>
 </ul>
 </div>
 
-<button onclick="mostrar('amenidades')">☕ Amenidades</button>
+<button onclick="mostrar('amenidades')">🏠❤️ Amenidades</button>
 <div id="amenidades" class="content">
 <ul id="textoAmenidades">
 </li>❄️Aire acondicionado en las 3 habitaciones</li>
@@ -193,6 +193,7 @@ Los espacios son limitados y requieren reservación previa.<br><br>
 
 <button onclick="mostrar('restaurantes')">🍽️ Restaurantes Recomendados</button>
 <div id="restaurantes" class="content">
+<ul id="textoRestaurantes">
 ☀️ <strong>Desayunos en el Norte de nuestra isla</strong><br><br>
 
 ☕ <a 
@@ -453,11 +454,18 @@ function cambiarIdioma() {
   <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
 
   document.querySelector("button[onclick=\"mostrar('amenidades')\"]").innerHTML =
-  "⚫ Amenities";
+  "🏠❤️ Amenities";
 
 document.getElementById("textoAmenidades").innerHTML =
 "❄️ Air conditioning in all 3 bedrooms<br><br>🚿 2 bathrooms<br><br>📶 WiFi<br><br>📺 Smart TV<br><br>☕ Coffee Bar<br><br>🍳 Equipped kitchen<br><br>🏖️ Beach chairs<br><br>⛱️ Beach umbrellas<br><br>🧊 Cooler<br><br>🤿 Snorkel masks<br><br>🚲 Bicycles<br><br>🌴 Hammocks<br><br>🚗 Private parking";
 
+document.querySelector("button[onclick=\"mostrar('restaurantes')\"]").innerHTML =
+"🍽️ Recommended Restaurants";
+
+document.getElementById("textoRestaurantes").innerHTML =
+`...`;
+  document.getElementById("textoRestaurantes").innerHTML =
+"<strong>🍳 Breakfast</strong><br><br><strong>North Area</strong><br>• Rising Roost<br>• D'Frozz<br><br><strong>Central Area</strong><br>• Rincón del Café<br><br><strong>South Area</strong><br>• Trade Winds<br>• Kristy's on the Caribe<br><br><strong>☀️ Lunch & Dinner</strong><br><br><strong>North Area</strong><br>• El Norte<br>• Mama Mia<br>• Casa Nativo<br><br><strong>Central Area</strong><br>• Tin Box<br>• Mango Tap House<br><br><strong>South Area</strong><br>• Duffy's<br>• El Quenepo<br>• Latte by Letty";
 }
   
 
@@ -508,11 +516,18 @@ document.querySelector("button[onclick=\"mostrar('horarios')\"]").innerHTML =
   <li>🌊 <a href="https://g.co/kgs/z8QKJxV" target="_blank">Playa Grande</a></li>`;
 
   document.querySelector("button[onclick=\"mostrar('amenidades')\"]").innerHTML =
-  "⚫ Amenidades";
+  "🏠❤️ Amenidades";
 
 document.getElementById("textoAmenidades").innerHTML =
 "❄️ Aire acondicionado en las 3 habitaciones<br><br>🚿 2 baños<br><br>📶 WiFi<br><br>📺 Smart TV<br><br>☕ Coffee Bar<br><br>🍳 Cocina equipada<br><br>🏖️ Sillas de playa<br><br>⛱️ Sombrillas de playa<br><br>🧊 Neverita<br><br>🤿 Caretas para snorkel<br><br>🚲 Bicicletas<br><br>🌴 Hamacas<br><br>🚗 Estacionamiento privado";
 
+document.querySelector("button[onclick=\"mostrar('restaurantes')\"]").innerHTML =
+"🍽️ Restaurantes Recomendados";
+
+document.getElementById("textoRestaurantes").innerHTML =
+`...`;
+document.getElementById("textoRestaurantes").innerHTML =
+"<strong>🍳 Desayuno</strong><br><br><strong>Área Norte</strong><br>• Rising Roost<br>• D'Frozz<br><br><strong>Área Central</strong><br>• Rincón del Café<br><br><strong>Área Sur</strong><br>• Trade Winds<br>• Kristy's on the Caribe<br><br><strong>☀️ Almuerzo y Cena</strong><br><br><strong>Área Norte</strong><br>• El Norte<br>• Mama Mia<br>• Casa Nativo<br><br><strong>Área Central</strong><br>• Tin Box<br>• Mango Tap House<br><br><strong>Área Sur</strong><br>• Duffy's<br>• El Quenepo<br>• Latte by Letty";
 }
   
 </script>
