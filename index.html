@@ -263,6 +263,7 @@ href="https://maps.app.goo.gl/EvS4sibyZbPK4c968?g_st=aw" target="_blank">Trade W
 
 <button onclick="mostrar('transportacion')">🚕 Transportación</button>
 <div id="transportacion" class="content">
+<p id="textoTransportacion">
 ⛴️ <strong>Ferry a Vieques</strong><br><br>
 
 Le recomendamos comprar sus boletos con anticipación.<br><br>
@@ -467,6 +468,22 @@ document.getElementById("textoRestaurantes").innerHTML =
   document.getElementById("textoRestaurantes").innerHTML =
 "<strong>🍳 Breakfast</strong><br><br><strong>North Area</strong><br>• Rising Roost<br>• D'Frozz<br><br><strong>Central Area</strong><br>• Rincón del Café<br><br><strong>South Area</strong><br>• Trade Winds<br>• Kristy's on the Caribe<br><br><strong>☀️ Lunch & Dinner</strong><br><br><strong>North Area</strong><br>• El Norte<br>• Mama Mia<br>• Casa Nativo<br><br><strong>Central Area</strong><br>• Tin Box<br>• Mango Tap House<br><br><strong>South Area</strong><br>• Duffy's<br>• El Quenepo<br>• Latte by Letty";
 }
+
+document.querySelector("button[onclick=\"mostrar('transportacion')\"]").innerHTML =
+"🚗 Transportation";
+
+document.getElementById("textoTransportacion").innerHTML =
+"🚢 <strong>Ferry to Vieques</strong><br><br>" +
+"We recommend purchasing your tickets in advance.<br><br>" +
+"🌐 <a href='https://www.puertoricoferry.com' target='_blank'>Puerto Rico Ferry</a><br><br>" +
+"If tickets appear sold out, they may not yet be available for online purchase or capacity has been reached.<br><br>" +
+"✈️ <strong>Flights to Vieques</strong><br><br>" +
+"🌐 <a href='https://www.viequesairlink.com' target='_blank'>Vieques Air Link</a><br>" +
+"From Ceiba or Isla Grande.<br><br>" +
+"🌐 <a href='https://www.capeair.com' target='_blank'>Cape Air</a><br>" +
+"From Ceiba or Isla Grande.<br><br>" +
+"🚕 <strong>Taxi Service</strong><br><br>" +
+"Uber is not available in Vieques. Taxis are limited, so we recommend reserving transportation in advance.<br><br>";
   
 
 function cambiarEspanol() {
@@ -525,11 +542,23 @@ document.querySelector("button[onclick=\"mostrar('restaurantes')\"]").innerHTML 
 "🍽️ Restaurantes Recomendados";
 
 document.getElementById("textoRestaurantes").innerHTML =
-`...`;
-document.getElementById("textoRestaurantes").innerHTML =
 "<strong>🍳 Desayuno</strong><br><br><strong>Área Norte</strong><br>• Rising Roost<br>• D'Frozz<br><br><strong>Área Central</strong><br>• Rincón del Café<br><br><strong>Área Sur</strong><br>• Trade Winds<br>• Kristy's on the Caribe<br><br><strong>☀️ Almuerzo y Cena</strong><br><br><strong>Área Norte</strong><br>• El Norte<br>• Mama Mia<br>• Casa Nativo<br><br><strong>Área Central</strong><br>• Tin Box<br>• Mango Tap House<br><br><strong>Área Sur</strong><br>• Duffy's<br>• El Quenepo<br>• Latte by Letty";
+
+document.querySelector("button[onclick=\"mostrar('transportacion')\"]").innerHTML =
+"🚗 Transportación";
+
+document.getElementById("textoTransportacion").innerHTML =
+"🚢 <strong>Ferry a Vieques</strong><br><br>" +
+"Le recomendamos comprar sus boletos con anticipación.<br><br>" +
+"🌐 <a href='https://www.puertoricoferry.com' target='_blank'>Puerto Rico Ferry</a><br><br>" +
+"Si los boletos aparecen agotados, puede significar que aún no están disponibles para la venta en línea o que la capacidad ya fue alcanzada.<br><br>" +
+"✈️ <strong>Vuelos a Vieques</strong><br><br>" +
+"🌐 <a href='https://www.viequesairlink.com' target='_blank'>Vieques Air Link</a><br>Desde Ceiba o Isla Grande.<br><br>" +
+"🌐 <a href='https://www.capeair.com' target='_blank'>Cape Air</a><br>Desde Ceiba o Isla Grande.<br><br>" +
+"🚕 <strong>Servicio de Taxis</strong><br><br>" +
+"Uber no opera en Vieques. Los taxis son limitados, por lo que recomendamos reservar su transportación con anticipación.<br><br>";
 }
-  
+
 </script>
 
 </body>
